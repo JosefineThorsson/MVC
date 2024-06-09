@@ -1,0 +1,121 @@
+body {
+    margin: 0 auto;
+    max-width: 400px;
+    background: url('../images/background.jpg');
+    background-size: cover;
+    background-color: #eee;
+}
+
+.main {
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.article {
+    overflow: auto;
+    background: #fff;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.article h1 {
+    font-size: 2em;
+    border-bottom: 4px double #ccc;
+    font-family: "Courier New", Courier, monospace;
+}
+
+.article .author {
+    margin-top: -1em;
+    font-size: 0.8em;
+    color: #666;
+    font-style: italic;
+}
+
+.main,
+.main .article {
+    min-height: 20em;
+}
+
+.aside {
+    background-color: #fff;
+    border-right: 1px solid #ccc;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 24px;
+}
+
+.aside h4 {
+    border-bottom: 1px solid #ccc;
+}
+
+.article h2 {
+    font-size: 1.5em;
+    border-bottom: 4px double #ccc;
+    font-family: "Courier New", Courier, monospace;
+}
+
+.article .text1 {
+    font-size: 1em;
+    font-family: Cambria, Georgia, Times, 'Times New Roman', serif;
+}
+
+h1 {
+    border-bottom: 4px double #ccc;
+}
+
+.two-col-layout {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width:900px;
+    margin: 0 auto;
+}
+
+.two-col-layout > .main {
+    width: calc(100% / 16 * 12); /* 12/16 width */
+}
+
+.two-col-layout > .aside {
+    width: calc(100% / 16 * 4); /* 4/16 width */
+}
+
+/*
+ * Prepare variables.
+ */
+:root {
+    --light-color: #8ddb7c;
+    --medium-color: #7A7;
+    --dark-color: #363;
+}
+
+/*
+ * Set colors, size and prepare positioning.
+ */
+.site-header {
+    background-color: var(--light-color);
+    border-bottom: 4px solid var(--dark-color);
+    position: relative;
+}
+
+/*
+ * Modify and position the subtitle.
+ */
+.subheader {
+    color: var(--dark-color);
+    font-size: 20px;
+
+    display: inline-block;
+    transform: rotate(-20deg);
+
+    position: relative;
+    padding: 2rem;
+    // top: -60px;
+    // left: 150px;
+}
+
+.image {
+    padding: 2rem;
+    position: center;
+}

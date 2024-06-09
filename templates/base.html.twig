@@ -2,6 +2,7 @@
 <html>
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <title>{% block title %}Welcome!{% endblock %}</title>
         <link rel="icon" href="{{ asset('img/glider.svg') }}">
         {% block stylesheets %}
@@ -16,8 +17,8 @@
 
     <body>
         <header class="site-header">
-            <img src="{{ asset('build/images/background.jpg') }}" height="300" alt="">
-            <span class="site-title">My Symfony Site</span>
+            <img src="{{ asset('build/images/background.jpg') }}" alt="background">
+            <span class="site-header">My Symfony Site</span>
         </header>
 
         <nav class="navbar">

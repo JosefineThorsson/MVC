@@ -4,12 +4,16 @@
 {% block title %}Magic number{% endblock %}
 
 {% block body %}
-    <header class="subheader">
-        <h1>Magic number</h1>        
-    </header>
+    <main class="main">
+        <article class="article">
+            <header class="subheader">
+                <h1>Magic number</h1>
+                <p class="author">Skriven av Josefine Thorsson, uppdaterad <time datetime="2024-04-26">2024-04-26</time>.</p>
+            </header>
 
-
-    <p>Welcome to my awesome magical homepage.</p>
-    <p>This is the current magic number: {{ number }}</p>
-    <img src="{{ asset('img/lucky.jpg') }}" width="300" alt="">
+            <p>Welcome to my awesome magical homepage.</p>
+            <p>This is the current magic number: {{ number }}</p>
+            <img class="image" src="{{ asset('img/lucky.jpg') }}" width="300" alt="lyckobild">            
+        </article>
+    </main>
 {% endblock %}

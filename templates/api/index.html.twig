@@ -3,11 +3,15 @@
 {% block title %}API Routes{% endblock %}
 
 {% block body %}
-    <header>
-    <h1>API Routes</h1>
-    </header>
+    <main class="main">
+        <article class="article">
+            <header>
+            <h1>API Routes</h1>
+            </header>
 
-    <ul>
-        <li><a href="{{ path('api_quote') }}">Quote</a></li>
-    </ul>
+            <ul>
+                <li><a href="{{ path('api_quote') }}">Quote</a></li>
+            </ul>            
+        </article>
+    </main>
 {% endblock %}
