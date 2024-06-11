@@ -17,7 +17,7 @@
         "dev": "encore dev",
         "watch": "encore dev --watch",
         "build": "encore production --progress",
-        "style": "sass assets/styles/base.scss assets/styles/style.min.css --no-source-map",
-        "style-min": "sass assets/styles/base.scss assets/styles/style.min.css  --no-source-map --style compressed"
+        "style": "sass assets/styles/base.scss assets/styles/app.css --no-source-map",
+        "style-min": "sass assets/styles/base.scss assets/styles/app.css  --no-source-map --style compressed"
     }
 }
